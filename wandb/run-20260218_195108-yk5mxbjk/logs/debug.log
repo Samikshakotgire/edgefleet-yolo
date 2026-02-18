@@ -1,0 +1,29 @@
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Configure stats pid to 10776
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Loading settings from C:\Users\DELL\.config\wandb\settings
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Loading settings from D:\EdgeFleetcodes\wandb\settings
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'codes\\main.py', 'program_abspath': 'D:\\EdgeFleetcodes\\codes\\main.py', 'program': 'D:\\EdgeFleetcodes\\codes\\main.py'}
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_setup.py:_flush():76] Applying login settings: {}
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:_log_setup():520] Logging user logs to D:\EdgeFleetcodes\wandb\run-20260218_195108-yk5mxbjk\logs\debug.log
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:_log_setup():521] Logging internal logs to D:\EdgeFleetcodes\wandb\run-20260218_195108-yk5mxbjk\logs\debug-internal.log
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:init():560] calling init triggers
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'confidence_threshold': 0.15, 'model': 'yolov8n', 'tracker': 'ByteTrack', 'prediction_method': 'Kalman Filter'}
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:init():610] starting backend
+2026-02-18 19:51:08,615 INFO    MainThread:10776 [wandb_init.py:init():614] setting up manager
+2026-02-18 19:51:08,660 INFO    MainThread:10776 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2026-02-18 19:51:08,696 INFO    MainThread:10776 [wandb_init.py:init():622] backend started and connected
+2026-02-18 19:51:08,700 INFO    MainThread:10776 [wandb_init.py:init():711] updated telemetry
+2026-02-18 19:51:08,744 INFO    MainThread:10776 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2026-02-18 19:51:09,874 ERROR   MainThread:10776 [wandb_init.py:init():770] encountered error: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2026-02-18 19:51:09,874 ERROR   MainThread:10776 [wandb_init.py:init():1174] error in wandb.init()
+Traceback (most recent call last):
+  File "D:\EdgeFleetcodes\venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1164, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "D:\EdgeFleetcodes\venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 776, in init
+    raise error
+wandb.errors.AuthenticationError: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2026-02-18 19:51:11,313 WARNING MsgRouterThr:10776 [router.py:message_loop():77] message_loop has been closed
